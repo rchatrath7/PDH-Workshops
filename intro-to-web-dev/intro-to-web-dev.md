@@ -5,30 +5,30 @@
 This writeup is meant as a complement to an introductory web development workshop taught by Pitt Design Hub. It’s designed to give a formal starting point for beginners, and is meant to be used as a launchpad for getting more involved in web development. Cheers!
 
 * [Introduction](#introduction)
-	* [A Few Notes](#notes)
-	* [The Web Stack](#the-web-stack)
-	* [Browsers!](#browser)
+  * [A Few Notes](#notes)
+  * [The Web Stack](#the-web-stack)
+  * [Browsers!](#browser)
 * [Starting Points](#starting-points)
 * [HTML](#html)
-	* [Tags](#tags)
-	* [The Head](#head)
-	* [The Body](#body)
-		* [Headings](#headings)
-		* [Text](#texts)
-		* [Links (Anchors)](#anchors)
-		* [Unordered Lists and List Items](#lists)
-		* [Images](#images)
-		* [Divs](#divs)
-		* [Comments](#comments)
+  * [Tags](#tags)
+  * [The Head](#head)
+  * [The Body](#body)
+    * [Headings](#headings)
+    * [Text](#texts)
+    * [Links (Anchors)](#anchors)
+    * [Unordered Lists and List Items](#lists)
+    * [Images](#images)
+    * [Divs](#divs)
+    * [Comments](#comments)
 * [CSS](#css)
-	* [Getting Started](#getting-started-css)
-	* [First Styling](#styling)
-	* [Classes](#classes)
-	* [More Useful Styling](#using-divs)
-	* [The Wonderful World of CSS](#more-on-css)
+  * [Getting Started](#getting-started-css)
+  * [First Styling](#styling)
+  * [Classes](#classes)
+  * [More Useful Styling](#using-divs)
+  * [The Wonderful World of CSS](#more-on-css)
 * [Javascript](#javascript)
-	* [A Rudimentary Example](#js-example)
-	* [Going Further](#more-on-js)
+  * [A Rudimentary Example](#js-example)
+  * [Going Further](#more-on-js)
 * [Hosting](#hosting)
 * [Next Steps](#next-steps)
 
@@ -40,13 +40,13 @@ First and foremost, this workshop isn’t designed to make a you a wizard at web
 * As with most programming, don’t worry to much about the semantics of syntax, the language, or whatever things you can easy Google -- Because well you can easily Google those things. The difficulty with web development isn’t remembering things, it’s being able to think like a developer. Focus more on the fundamentals and theories presented in this workshop rather than what the difference between a `<div>` and a `<p>` is.
 * As said earlier, don’t be afraid to look things up. Google is a developer’s best friend, and once your done with this workshop, you’ll find there are hoards of online resources to use to continue learning.
 * And finally, here are some developer headache saviors:
-	* [Google](https://www.google.com)
-	* [StackOverflow](http://www.stackoverflow.com)
-	* [Tutorials Point](https://www.tutorialspoint.com)
-	* [W3](https://www.w3schools.com)
-	* [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web)
-	* [Scotch.io](https://scotch.io)
-	* And many more, these are just some of my favorites.
+  * [Google](https://www.google.com)
+  * [StackOverflow](http://www.stackoverflow.com)
+  * [Tutorials Point](https://www.tutorialspoint.com)
+  * [W3](https://www.w3schools.com)
+  * [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web)
+  * [Scotch.io](https://scotch.io)
+  * And many more, these are just some of my favorites.
 
 ### <a name=“the-web-stack”></a> The Web Stack
 Before we get started with the nitty-gritty of HTML, CSS and Javascript, it’s important to understand what we mean by “the web” and what’s actually happening when you visit a webpage. If you’ve programmed before, you might be familiar with the concept of `abstraction`. If not, here’s a quick rundown.
@@ -97,10 +97,10 @@ These tags tell the browser that we’re making an HTML page. The attribute, `la
 Within the `html` tag, there are two essential tags that should be in the markup: `head` and `body`.
 ```html
 <html lang=“en”>
-	<head>
-	</head>
-	<body>
-	</body>
+  <head>
+  </head>
+  <body>
+  </body>
 </html>
 ```
 
@@ -108,13 +108,13 @@ Within the `html` tag, there are two essential tags that should be in the markup
 The `head` tag contains metadata about your HTML document as well as styling, scripts, and other information (such as the title of that given page).
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-	</body>
+  <head>
+    <title>My Awesome Web Page</title>
+    <link rel=“stylesheet”     href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css”/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+  </body>
 </html>
 ```
 You might notice the `title` tag here. When you first loaded the web page without the tag, in your browser you would see a random file path or url. The `title` tag indicates what the name of your web page is; with it added you can see the name of your web page on the tab of your browser.
@@ -148,16 +148,16 @@ In HTML, `headings` allow you to create section titles of varying size and empha
 Let’s fill this webpage with some headings now:
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<h1>Welcome to My Awesome WebPage!</h1>
-		<h2>I’m really cool.</h2>
-		<h2>I like cool things.</h2>
-	</body>
+  <head>
+  <title>My Awesome Web Page</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to My Awesome WebPage!</h1>
+    <h2>I’m really cool.</h2>
+    <h2>I like cool things.</h2>
+  </body>
 </html>
 ```
 
@@ -167,18 +167,18 @@ Let’s fill this webpage with some headings now:
 Now that we have defined sections, let’s add some text to continue filling content. In HTML, we can simply type to add content:
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<h1>Welcome to My Awesome WebPage!</h1>
-		<h2>I’m really cool.</h2>
-		My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)
-		<h2>I like cool things.</h2>
-		Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)
-	</body>
+  <head>
+    <title>My Awesome Web Page</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to My Awesome WebPage!</h1>
+    <h2>I’m really cool.</h2>
+    My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)
+    <h2>I like cool things.</h2>
+    Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)
+  </body>
 </html>
 ```
 ![Example Content 2](Assets/example-content-2.png)
@@ -186,18 +186,18 @@ Now that we have defined sections, let’s add some text to continue filling con
 However, this is generally bad practice. HTML provides a `paragraph` tag, delimited as `<p>`. It’s generally much better practice to wrap all your text in “p” tags, so that  each paragraph has a clearly defined section in your HTML page, as well as later on so that individual paragraphs can be targeted by CSS (more on this later). Let’s fix our code.
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<h1>Welcome to My Awesome WebPage!</h1>
-		<h2>I’m really cool.</h2>
-		<p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
-		<h2>I like cool things.</h2>
-		<p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
-	</body>
+  <head>
+    <title>My Awesome Web Page</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to My Awesome WebPage!</h1>
+    <h2>I’m really cool.</h2>
+    <p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
+    <h2>I like cool things.</h2>
+    <p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
+  </body>
 </html>
 ```
 ![Example Content 3](Assets/example-content-3.png)
@@ -208,21 +208,21 @@ However, this is generally bad practice. HTML provides a `paragraph` tag, delimi
 Sometimes in your markup you may want to link to other websites or content. To do this, we’ll use the `a` or anchor tag.
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<h1>Welcome to My Awesome WebPage!</h1>
-		<h2>I’m really cool.</h2>
-		<p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
-		<h2>I like cool things.</h2>
-		<p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
-		<p><a href=“https://pittdesignhub.com”>Design Hub</a></p>
-		<p><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></p>
-		<p><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></p>
-	</body>
+  <head>
+    <title>My Awesome Web Page</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to My Awesome WebPage!</h1>
+    <h2>I’m really cool.</h2>
+    <p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
+    <h2>I like cool things.</h2>
+    <p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
+    <p><a href=“https://pittdesignhub.com”>Design Hub</a></p>
+    <p><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></p>
+    <p><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></p>
+  </body>
 </html>
 ```
 
@@ -233,23 +233,23 @@ However, as you can see we have three of essentially the same type of **thing** 
 
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<h1>Welcome to My Awesome WebPage!</h1>
-		<h2>I’m really cool.</h2>
-		<p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
-		<h2>I like cool things.</h2>
-		<p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
-		<ul>
-			<li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
-			<li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
-			<li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
-		</ul>
-	</body>
+  <head>
+    <title>My Awesome Web Page</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to My Awesome WebPage!</h1>
+    <h2>I’m really cool.</h2>
+    <p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
+    <h2>I like cool things.</h2>
+    <p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
+    <ul>
+      <li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
+      <li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
+      <li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
+    </ul>
+  </body>
 </html>
 ```
 ![Example Content 5](Assets/example-content-5.png)
@@ -258,24 +258,24 @@ However, as you can see we have three of essentially the same type of **thing** 
 We can further customize our website by adding images. HTML provides the image tag `img` to use. You can specify URLs or relative paths,  though for succinctness in this workshop we’ll talk about URLs for now.
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<h1>Welcome to My Awesome WebPage!</h1>
-		<h2>I’m really cool.</h2>
-		<p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
-		<h2>I like cool things.</h2>
-		<p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
-		<ul>
-			<li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
-			<li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
-			<li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
-		</ul>
-		<img src=“http://www.pittdesignhub.com/assets/img/InvertedDesignHub.png” />
-	</body>
+  <head>
+    <title>My Awesome Web Page</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Welcome to My Awesome WebPage!</h1>
+    <h2>I’m really cool.</h2>
+    <p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
+    <h2>I like cool things.</h2>
+    <p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
+    <ul>
+      <li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
+      <li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
+      <li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
+    </ul>
+    <img src=“http://www.pittdesignhub.com/assets/img/InvertedDesignHub.png” />
+  </body>
 </html>
 ```
 
@@ -289,32 +289,32 @@ Divs are perhaps the most fundamental and most powerful elements in HTML. Div st
 As we can see, Literally everything is encapsulated in its own div. So how do we use divs? We’ll simply use divs to organize our code! While it won’t do anything right now, later when we style we can target these divs to give each section it’s individual style.
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<div>
-			<h1>Welcome to My Awesome WebPage!</h1>
-		</div>
-		<div>
-			<h2>I’m really cool.</h2>
-			<p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
-		</div>
-		<div>
-			<h2>I like cool things.</h2>
-			<p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
-			<ul>
-				<li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
-				<li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
-				<li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
-			</ul>
-		</div>
-		<div>
-			<img src=“http://www.pittdesignhub.com/assets/img/InvertedDesignHub.png” />
-		</div>
-	</body>
+  <head>
+    <title>My Awesome Web Page</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to My Awesome WebPage!</h1>
+    </div>
+    <div>
+      <h2>I’m really cool.</h2>
+      <p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
+    </div>
+    <div>
+      <h2>I like cool things.</h2>
+      <p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
+      <ul>
+        <li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
+        <li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
+        <li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <img src=“http://www.pittdesignhub.com/assets/img/InvertedDesignHub.png” />
+    </div>
+  </body>
 </html>
 ```
 
@@ -339,14 +339,14 @@ Of course, how you setup your project will vary, but that’s the general format
 CSS essentially works by defining a bunch of rules for your HTML elements. In fact, we can change just about any attribute for any element in HTML just with pure CSS code. The general structure is as follows:
 ```css
 selector {
-	pointer: ...;
+  pointer: ...;
 }
 ```
 Selector refers to the HTML element you want to select. Pointer refers to the attribute you want to define a rule for. The ellipses are the definition of that rule. Let’s look at a rudimentary example. Supposed I wanted to make all the titles in our be emphasized a little bit more. To do this we want to *select* all the `h2` elements in our project, and then *point* to the text attribute of that element. If we wanted to make the text italics and purple we could do something like this:
 ```css
 h2 {
-	font-style: italics;
-	color: purple;
+  font-style: italics;
+  color: purple;
 }
 ```
 Here we are telling CSS that for all `h2` elements, we want to adjust the rules for the `font-style` and the be `color` of that element. In this case, we’re defining the rule to be italic and purple respectively.
@@ -364,11 +364,11 @@ All HTML elements can have a class, like so:
 In our extremely rudimentary example above, we might want to have two CSS classes for different colors for the anchor whether they are subscribed or not:
 ```css
 .info {
-	color: blue;
+  color: blue;
 }
 
 .danger {
-	color: red;
+  color: red;
 }
 ```
 By default, our user isn’t subscribed to the content creator, and so we’d want the link to be colored blue, like so:
@@ -384,42 +384,43 @@ However, once they subscribe, we want them to know that the link is now dangerou
 Like we alluded to earlier, divs are incredibly versatile for styling. A common look in webpages like ours is to have the whole thing horizontally centered on the page. Let’s use divs and CSS classes to center our content on the page. This is easier than it might seem. First let’s mock up our CSS. We’ll create a new css classes called `centered`.
 ```css
 .centered {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 ```
 In order to use this class, let’s wrap our whole web page in a div and give it the `centered` class.
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<div>
-			<h1>Welcome to My Awesome WebPage!</h1>
-		</div>
-		<div>
-			<h2>I’m really cool.</h2>
-			<p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
-		</div>
-		<div>
-			<h2>I like cool things.</h2>
-			<p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
-			<ul>
-				<li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
-				<li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
-				<li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
-			</ul>
-		</div>
-		<div>
-			<img src=“http://www.pittdesignhub.com/assets/img/InvertedDesignHub.png” />
-		</div>
-	</body>
+  <head>
+    <title>My Awesome Web Page</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to My Awesome WebPage!</h1>
+    </div>
+    <div>
+      <h2>I’m really cool.</h2>
+      <p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
+    </div>
+    <div>
+      <h2>I like cool things.</h2>
+      <p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
+      <ul>
+        <li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
+        <li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
+        <li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <img src=“http://www.pittdesignhub.com/assets/img/InvertedDesignHub.png” />
+    </div>
+  </body>
 </html>
 ```
+
 And voila! Our page is now horizontally centered.
 
 ![Example Content 9](Assets/example-content-9.png)
@@ -445,28 +446,28 @@ However, we can do a little bit better. Let’s continue tidying up our pages by
 
 ```css
 h2 {
-	font-style: italic;
-	color: purple;
-  	text-align: center;
+  font-style: italic;
+  color: purple;
+  text-align: center;
 }
 
 h1 {
-	text-align: center;
+  text-align: center;
 }
 
 .centered {
-	width: 50%;
-	margin-right: auto;
-	margin-left: auto;
-	padding: 15px;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 15px;
 }
 ```
 We can easily center any form of text (`<p>`, `<h1-6>`, `<a>`) horizontally on the page with the attribute `text-align: center`.  For the `.centered` class, we added `padding: 15px`. This attribute is exactly what it sounds like: it adds the designated amount of pixels in between the elements inside the div and the divs’ edges, essentially creating a mini border inside the div.
 > Note: Like margin, you can specify the padding individually for each side of the div. In this case, we wanted the padding on every side, so we used a shortcut with just `padding: ...`. What this actually does is produce the four following commands:
 > * `padding-top: ...`
-   * `padding-left: ...`
-   * `padding-right: ...`
-   * `padding-bottom: ...`
+> * `padding-left: ...`
+> * `padding-right: ...`
+> * `padding-bottom: ...`
 > Any pointer that can be applied to all sides of a div has this shortcut, including margin.
 
 ![Example Content 11](Assets/example-content-11.png)
@@ -474,7 +475,7 @@ We can easily center any form of text (`<p>`, `<h1-6>`, `<a>`) horizontally on t
 Finally, let’s fix our image so that it’s width is constrained to the size of our centered div. To do this, we’ll need one more CSS classes:
 ```css
 .constrain-width {
-	max-width: 100%;
+  max-width: 100%;
 }
 ```
 This class is for our image itself. With this, we’re telling CSS that whatever has this class cannot have a width larger than the width of its parent, in this case the div it’s wrapped in which has the width of `.centered`.  You might be wondering why we don’t just apply that property to the div it’s wrapped in. CSS and HTML are flexible, they allow the contents of a div to **overflow** out of the divs containing them, so as not to cut off that element.
@@ -485,6 +486,7 @@ There are many ways to dealing with overflow (for example allowing the div to be
 
 ![Example Content 13](Assets/example-content-13.png)
 > Note: This trick we did to resize the image can work if it’s too small, too. `max-width` has a sister property called `min-width` and so if our image was too small, we could make it be the size of the div by using that property. These properties are also available for `height`, too.
+
 ### <a name=“more-on-css”></a> More on CSS
 CSS has manyyyy things to learn. It’s incredibly powerful and versatile. Here are some links with essential CSS information for further learning:
 * [Cascading Styles](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
@@ -496,6 +498,7 @@ CSS has manyyyy things to learn. It’s incredibly powerful and versatile. Here 
 Once you understand a lot of the fundamentals of CSS and have gotten used to using it a lot, you might be interested in improving your workflow (CSS can be very frustrating to actually type!). There are CSS preprocessors that give more versatile and friendly tools to make writing CSS easier. Essentially they transpile into CSS, that you can throw into your web page. You should look at these after you feel very confident in your CSS abilities, they’ll make your life easier!
 * [Sass  (SCSS)](http://sass-lang.com)
 * [Less](http://lesscss.org/)
+
 ## <a name=“javascript”></a> Javascript
 Javascript is the programming language of the web -- it allows you to do incredibly complex and dynamic things with your web pages. MDN describes JS exceptionally:
 > JavaScript is a programming language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. Ok, not everything, but it is amazing what you can achieve with a few lines of JavaScript code.
@@ -505,75 +508,78 @@ With that said, Javascript has a very complex and diverse ecosystem -- much more
 So what is something we can do with Javascript in our basic web app? Well,  lots of things. But, for now let’s try to hide and show our image by clicking a link. First, let’s create two HTML links that we’ll use to start adding functionality.
 ```html
 <html lang=“en”>
-	<head>
-		<title>My Awesome Web Page</title>
-		<link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	</head>
-	<body>
-		<div>
-			<h1>Welcome to My Awesome WebPage!</h1>
-		</div>
-		<div>
-			<h2>I’m really cool.</h2>
-			<p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
-		</div>
-		<div>
-			<h2>I like cool things.</h2>
-			<p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
-			<ul>
-				<li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
-				<li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
-				<li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
-			</ul>
-		</div>
-		<div>
-			<img id=“banner” src=“http://www.pittdesignhub.com/assets/img/InvertedDesignHub.png” />
-			<!-- By default, we want to show the banner, keep the link hidden for now -->
-			<a href=‘#’ id=“showBanner” onClick=“showBanner()” style=“display: none”>Show Banner</a>
-			<a href=“#” id=“hideBanner” onClick=“hideBanner()”>Hide Banner</a>
-		</div>
-	</body>
+  <head>
+    <title>My Awesome Web Page</title>
+    <link rel=“stylesheet” href=“https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css” />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>Welcome to My Awesome WebPage!</h1>
+    </div>
+    <div>
+      <h2>I’m really cool.</h2>
+      <p>My name is Rakesh Chatrath and I’m a sophomore here at the University of Pittsburgh :)</p>
+    </div>
+    <div>
+      <h2>I like cool things.</h2>
+      <p>Design Hub is super cool. We do cool things like workshops as well as pair students together to work on Design Teams. Check us out ;)</p>
+      <ul>
+        <li><a href=“https://pittdesignhub.com”>Design Hub</a></li>
+        <li><a href=“https://www.facebook.com/pittdesignhub”>Facebook</a></li>
+        <li><a href=“https://github.com/mike-u/DesignHubWeb”>GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <img id=“banner” src=“http://www.pittdesignhub.com/assets/img/InvertedDesignHub.png” />
+      <!-- By default, we want to show the banner, keep the link hidden for now -->
+      <a href=‘#’ id=“showBanner” onClick=“showBanner()” style=“display: none”>Show Banner</a>
+      <a href=“#” id=“hideBanner” onClick=“hideBanner()”>Hide Banner</a>
+    </div>
+  </body>
 </html>
 ```
 There’s a few important things we’re doing here. First, with anchors, if you set `href=‘#’`, then when you click the link it will not redirect you anywhere, and you can use the click as an easy way to add functionality. Second, we assigned an ID to each of the links. This is especially important as now we can easily select elements in our Javascript. Third, one of the HTML attributes we added was `onClick`; this is exactly what it sounds like: when a user clicks the link it will do something, in this case call a function we’ll define in our Javascript. Finally, in the first the link we used inline styling (generally bad practice but for this example we’ll let it slide ;) ) to set the `display` pointer to `none`. This essentially keeps that element hidden from the web page. Now, let’s add some Javascript to make this functional.
 ```js
 var showBanner = function()  {
-	// Get Banner and Links
-	var banner = document.getElementById(“banner”);
-	var showLink = document.getElementById(“showBanner”);
-	var hideLink = document.getElementById(“hideBanner”);
+  // Get Banner and Links
+  var banner = document.getElementById(“banner”);
+  var showLink = document.getElementById(“showBanner”);
+  var hideLink = document.getElementById(“hideBanner”);
 
-	// Show Banner
-	banner.style.display = “block”;
+  // Show Banner
+  banner.style.display = “block”;
 
-	// Hide Show Banner Link
-	showLink.style.display = “none”;
+  // Hide Show Banner Link
+  showLink.style.display = “none”;
 
-	// Show Hide Banner Link
-	hideLink.style.display = “inline”; 	
+  // Show Hide Banner Link
+  hideLink.style.display = “inline”;   
 }
 
 var hideBanner = function() {
-	// Get Banner and Links
-	var banner = document.getElementById(“banner”);
-	var showLink = document.getElementById(“showBanner”);
-	var hideLink = document.getElementById(“hideBanner”);
+  // Get Banner and Links
+  var banner = document.getElementById(“banner”);
+  var showLink = document.getElementById(“showBanner”);
+  var hideLink = document.getElementById(“hideBanner”);
 
-	// Hide Banner
-	banner.style.display = “none”;
+  // Hide Banner
+  banner.style.display = “none”;
 
-	// Hide Hide Banner Link
-	hideLink.style.display = “none”;
+  // Hide Hide Banner Link
+  hideLink.style.display = “none”;
 
-	// Show Show Banner Link
-	showLink.style.display = “inline”; 	
+  // Show Show Banner Link
+  showLink.style.display = “inline”;   
 }
 ```
+
 This piece of Javascript does a few things: it assigns functions, gets HTML elements, and adjusts the style of those elements. Javascript has the ability to get information about the document it is in. The special variable `document` essentially represents your HTML page. By assigning IDs to our elements we can find which element we want to access and then adjust it’s properties. In essence, we returned the `showBanner` and `hideBanner` links within Javascript, and then accessed their `style` property, which in term had a `display` property that we either set to `none` or `inline` depending on what we were doing. And with that, we’ve added functionality to hide or display our banner at the click of a link.
 > Note: This by no means was the most efficient or proper way to add this functionality. A neat thing about JS is that there are MANY ways to do the same things: this way was chosen because it covered a lot of basics about JS and is simple to understand. Javascript has a very rich ecosystems; there are many frameworks building off Javascript that essentially define different ways to do the same thing. When you start to get more into Javascript you should find what works best for you according to your requirements and how efficiently you can produce the code. But, just like CSS, a solid foundation in Javascript will go a much longer way as frameworks dip in and out moreso than any other language.
+
 ### <a name=“more-on-js”></a> Going Further
 As with CSS, there is an abundance of more things to learn with Javascript. Instead of giving you a list of things to go after this time, I’m giving a different a recommendation. Javascript simply has too many features for you to ever use all of them. Instead start building things. Try experimenting with different basic ideas: like making a clock/timer, a portfolio, or whatever random idea you have. As you have questions of functionality you have in mind, look at the Javascript docs and Google things to find your answer. I recommend trying to program everything yourself in pure Javascript, devoid of any frameworks, but if you get really stuck, StackOverflow is great. Once you’ve gotten a decent feel for JS, turn to some resources about what you should study like Quora and StackOverflow questions, curated lists, Scotch.io and of course MDN and W3Schools. Finally, start to dip your toes in JS frameworks/libraries. As you get more engrossed in web development, it might seem like everyone is talking about Node.js, React, or Angular -- it doesn’t hurt to get your hands wet with some of these technologies (they can be extremely powerful, if a bit confusing/complex at first.
+
 ## <a name=“hosting”></a> Hosting
 This section is all about hosting. But what is hosting? Well at some point if you decide to want to work on your machine and move past CodePen (as you most likely will once you’re more experienced) then you need to somehow make your code available. This is called Hosting. There are a lot of great tools now to get your projects up without having to pay for expensive servers such as `Heroku` or `Pancake` but for now we’ll talk about Github Pages. Github Pages is a tool that allows you to host web pages directly from your Git repo.
 
@@ -608,13 +614,13 @@ And that’s it! Your webpage should be visible at http://username.github.io.
 
 ```
 username.github.io
-	css/
-		style.css
-	js/
-		app.js
-	LICENSE.txt
-	README.md
-	index.html
+  css/
+    style.css
+  js/
+    app.js
+  LICENSE.txt
+  README.md
+  index.html
 ```
 
 > Note: Remember to link the relative paths in your index.html, `<link href=“/css/style.css” ... />` and `<script src=“/js/app.js” ... ></script>`.
