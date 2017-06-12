@@ -228,7 +228,7 @@ Sometimes in your markup you may want to link to other websites or content. To d
 
 ![Example Content 4](Assets/example-content-4.png)
 
-### Lists
+### Unordered Lists and List Items
 However, as you can see we have three of essentially the same type of **thing**  in the example with links above. We can group these items into a `unordered list`. HTML provides two basic tags for `lists`: `ul` (`unordered list`) and `li` (`list item`). The `ul` tag can be thought of the container for the list, or the piece of paper if you were to create this list with pen and paper. The `li` tag represents the actual content of the list, the bullet points or what you would write down on pen and paper. Let’s convert our code to use Lists.
 
 ```html
@@ -354,7 +354,7 @@ Here we are telling CSS that for all `h2` elements, we want to adjust the rules 
 
 > Note: For every selector, CSS has a wide variety of pointers you can set rules for. By no means do you need to have all these or even any memorized. Using tools like w3 to look things up is all you might need. However you might want to remember how to define styles for relatively common things, like width, height, color, etc.
 
-### CSS Classes
+### Classes
 Often times, you’ll want to be able to style the same component differently within your HTML page. In fact, you might even want to have many of the same element with one style and many of the same element with another style. One of the most common examples is with the `a` tag. Suppose we’re building a video sharing website: we might want to have an `a` tag to allow a user to subscribe, but if they’re already subscribed, we might want to change that `a` to unsubscribe. However, to make things clearer to the user what action we’re performing, we’d want to have some stylistic difference between subscribing and unsubscribing. Enter CSS classes.
 
 All HTML elements can have a class, like so:
@@ -380,7 +380,8 @@ However, once they subscribe, we want them to know that the link is now dangerou
 <a href=... class=“danger”>Unsubscribe</a>
  ```
 > Note: To recap, all HTML elements with the class `info` in our example above will have the text color as `blue` and all HTML elements with the class as `danger` will have the text color of `red`.
-### Using Divs
+
+### More Useful Styling
 Like we alluded to earlier, divs are incredibly versatile for styling. A common look in webpages like ours is to have the whole thing horizontally centered on the page. Let’s use divs and CSS classes to center our content on the page. This is easier than it might seem. First let’s mock up our CSS. We’ll create a new css classes called `centered`.
 ```css
 .centered {
@@ -487,7 +488,7 @@ There are many ways to dealing with overflow (for example allowing the div to be
 ![Example Content 13](Assets/example-content-13.png)
 > Note: This trick we did to resize the image can work if it’s too small, too. `max-width` has a sister property called `min-width` and so if our image was too small, we could make it be the size of the div by using that property. These properties are also available for `height`, too.
 
-### More on CSS
+### The Wonderful World of CSS
 CSS has manyyyy things to learn. It’s incredibly powerful and versatile. Here are some links with essential CSS information for further learning:
 * [Cascading Styles](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
 * [Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
