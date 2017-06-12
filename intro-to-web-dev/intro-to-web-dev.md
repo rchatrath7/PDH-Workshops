@@ -320,7 +320,7 @@ As we can see, Literally everything is encapsulated in its own div. So how do we
 
 ### Comments
 Lastly, like most programming languages, HTML provides the ability to comment code. Comments are delimited by `<!-- -->` in HTML. Comments are good for explaining code in your markup, but will not appear in your rendered document.
-```
+```html
 <h1>Hi</h1>
 <!-- This is a comment. I’m not gonna appear anywhere except for here.
 I can span multiple lines -->
